@@ -129,12 +129,14 @@ public class ImageActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
+                break;
             case MY_PERMISSIONS_REQUEST_CAMARA:
                 if(resultCode == RESULT_OK){
                     Bundle extras = data.getExtras();
                     Bitmap imageBitmap = (Bitmap) extras.get("data");
                     Igaleria.setImageBitmap(imageBitmap);
                 }
+                break;
         }
     }
 
